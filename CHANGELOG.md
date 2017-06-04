@@ -1,3 +1,10 @@
+# v2.0.0
+## 2017-06-04
+
+1. [](#new)
+    * Renamed to Static-PageCache
+    * Allow serving pages without php
+
 # v1.2.0
 ## 07/14/2016
 

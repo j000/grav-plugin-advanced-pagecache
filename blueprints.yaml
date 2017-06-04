@@ -1,14 +1,13 @@
-name: AdvancedPageCache
-version: 1.2.0
-description: "AdvancedPageCache turbo charges your site by statically caching pages."
+name: Static-PageCache
+version: 1.0.0
+description: "Static-PageCache turbo charges your site by statically caching pages."
 icon: dashboard
 author:
-  name: Team Grav
-  email: devs@getgrav.org
-  url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-plugin-advanced-pagecache
+  name: j000
+  email: jarymut+dev@gmail.com
+homepage: https://github.com/j000/grav-plugin-static-pagecache
 keywords: "static, cache, plugin, performance"
-bugs: https://github.com/getgrav/grav-plugin-advanced-pagecache/issues
+bugs: https://github.com/j000/grav-plugin-static-pagecache/issues
 license: MIT
 
 form:
@@ -21,8 +20,8 @@ form:
       highlight: 1
       default: 1
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
 
@@ -32,8 +31,8 @@ form:
       highlight: 1
       default: 1
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
       help: Enable if there are params set on this URI (eg. /color:blue)
@@ -44,8 +43,8 @@ form:
       highlight: 1
       default: 1
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
       help: Enable if there are query options set on this URI (eg. ?color=blue)

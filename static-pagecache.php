@@ -4,7 +4,7 @@ namespace Grav\Plugin;
 use \Grav\Common\Plugin;
 use \Grav\Common\Uri;
 
-class AdvancedPageCachePlugin extends Plugin
+class StaticPageCachePlugin extends Plugin
 {
     /** @var Config $config */
     protected $config;
@@ -42,7 +42,7 @@ class AdvancedPageCachePlugin extends Plugin
      */
     public function onPluginsInitialized()
     {
-        $config = $this->grav['config']->get('plugins.advanced-pagecache');
+        $config = $this->grav['config']->get('plugins.static-pagecache');
 
         /** @var Uri $uri */
         $uri = $this->grav['uri'];
