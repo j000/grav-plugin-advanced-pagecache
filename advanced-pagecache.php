@@ -28,13 +28,11 @@ class AdvancedPageCachePlugin extends Plugin
     private function isDefaultPageType() {
         /** @var Uri $uri */
         $uri = $this->grav['uri'];
-        $extension = $uri->extension();
+        // not sure if and which version is needed
+        $extension = ltrim($uri->extension(),'.');
+        $appended_extension = ltrim($this->grav['config']->get('system.pages.append_url_extension'),'.') || 'html';
         
-        if (!$extension) {
-            return true;
-        }
-        
-        if (('.' . $extension) == $this->grav['config']->get('system.pages.append_url_extension')) {
+        if (!$extension || $extension == $appended_extension) {
             return true;
         }
     }
